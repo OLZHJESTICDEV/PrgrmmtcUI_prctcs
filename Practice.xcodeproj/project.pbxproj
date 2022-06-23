@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		04F283B628632E7400018F4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F283B528632E7400018F4D /* AppDelegate.swift */; };
 		04F283B828632E7400018F4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F283B728632E7400018F4D /* SceneDelegate.swift */; };
-		04F283BA28632E7400018F4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F283B928632E7400018F4D /* ViewController.swift */; };
-		04F283BD28632E7400018F4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F283BB28632E7400018F4D /* Main.storyboard */; };
 		04F283BF28632E7600018F4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F283BE28632E7600018F4D /* Assets.xcassets */; };
 		04F283C228632E7600018F4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F283C028632E7600018F4D /* LaunchScreen.storyboard */; };
+		04F283CA28632EF500018F4D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F283C928632EF500018F4D /* TabBarViewController.swift */; };
+		04F283CC2863301000018F4D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F283CB2863301000018F4D /* SecondViewController.swift */; };
+		04F283CE2863418800018F4D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F283CD2863418800018F4D /* FirstViewController.swift */; };
+		04F283D22864156100018F4D /* FirstVCLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F283D12864156100018F4D /* FirstVCLayout.swift */; };
+		04F283D42864371E00018F4D /* EmojiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F283D32864371E00018F4D /* EmojiTableViewCell.swift */; };
+		04F283D62864453A00018F4D /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F283D52864453A00018F4D /* EmojiModel.swift */; };
+		04F283DA28644AC500018F4D /* CreateEmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F283D928644AC500018F4D /* CreateEmojiViewController.swift */; };
+		04F283DC286457EE00018F4D /* EditEmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F283DB286457EE00018F4D /* EditEmojiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04F283B228632E7400018F4D /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F283B528632E7400018F4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F283B728632E7400018F4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04F283B928632E7400018F4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04F283BC28632E7400018F4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04F283BE28632E7600018F4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F283C128632E7600018F4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F283C328632E7600018F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F283C928632EF500018F4D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		04F283CB2863301000018F4D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		04F283CD2863418800018F4D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		04F283D12864156100018F4D /* FirstVCLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVCLayout.swift; sourceTree = "<group>"; };
+		04F283D32864371E00018F4D /* EmojiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewCell.swift; sourceTree = "<group>"; };
+		04F283D52864453A00018F4D /* EmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
+		04F283D928644AC500018F4D /* CreateEmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmojiViewController.swift; sourceTree = "<group>"; };
+		04F283DB286457EE00018F4D /* EditEmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmojiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,37 @@
 		04F283B428632E7400018F4D /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				04F283D728644A4D00018F4D /* MainViewControllers */,
+				04F283D828644A8100018F4D /* CustomViewControllers */,
+				04F283D52864453A00018F4D /* EmojiModel.swift */,
+				04F283D32864371E00018F4D /* EmojiTableViewCell.swift */,
 				04F283B528632E7400018F4D /* AppDelegate.swift */,
 				04F283B728632E7400018F4D /* SceneDelegate.swift */,
-				04F283B928632E7400018F4D /* ViewController.swift */,
-				04F283BB28632E7400018F4D /* Main.storyboard */,
 				04F283BE28632E7600018F4D /* Assets.xcassets */,
 				04F283C028632E7600018F4D /* LaunchScreen.storyboard */,
 				04F283C328632E7600018F4D /* Info.plist */,
 			);
 			path = Practice;
+			sourceTree = "<group>";
+		};
+		04F283D728644A4D00018F4D /* MainViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04F283C928632EF500018F4D /* TabBarViewController.swift */,
+				04F283CD2863418800018F4D /* FirstViewController.swift */,
+				04F283D12864156100018F4D /* FirstVCLayout.swift */,
+				04F283CB2863301000018F4D /* SecondViewController.swift */,
+			);
+			path = MainViewControllers;
+			sourceTree = "<group>";
+		};
+		04F283D828644A8100018F4D /* CustomViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04F283D928644AC500018F4D /* CreateEmojiViewController.swift */,
+				04F283DB286457EE00018F4D /* EditEmojiViewController.swift */,
+			);
+			path = CustomViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +161,6 @@
 			files = (
 				04F283C228632E7600018F4D /* LaunchScreen.storyboard in Resources */,
 				04F283BF28632E7600018F4D /* Assets.xcassets in Resources */,
-				04F283BD28632E7400018F4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +171,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F283BA28632E7400018F4D /* ViewController.swift in Sources */,
+				04F283CE2863418800018F4D /* FirstViewController.swift in Sources */,
+				04F283DC286457EE00018F4D /* EditEmojiViewController.swift in Sources */,
+				04F283CC2863301000018F4D /* SecondViewController.swift in Sources */,
+				04F283D42864371E00018F4D /* EmojiTableViewCell.swift in Sources */,
+				04F283D62864453A00018F4D /* EmojiModel.swift in Sources */,
+				04F283DA28644AC500018F4D /* CreateEmojiViewController.swift in Sources */,
+				04F283CA28632EF500018F4D /* TabBarViewController.swift in Sources */,
 				04F283B628632E7400018F4D /* AppDelegate.swift in Sources */,
+				04F283D22864156100018F4D /* FirstVCLayout.swift in Sources */,
 				04F283B828632E7400018F4D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +187,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04F283BB28632E7400018F4D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04F283BC28632E7400018F4D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04F283C028632E7600018F4D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,7 +325,7 @@
 				INFOPLIST_FILE = Practice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,7 +337,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +352,7 @@
 				INFOPLIST_FILE = Practice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +364,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
