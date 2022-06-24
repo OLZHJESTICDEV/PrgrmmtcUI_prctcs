@@ -9,6 +9,8 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    
+    
     var favoriteEmoji = [
         Emoji(emoji: "🥲", name: "Cry", description: "Don't cry!", isFavorite: true),
         Emoji(emoji: "😁", name: "Smile", description: "Let's smile!", isFavorite: true),
@@ -18,14 +20,26 @@ class SecondViewController: UIViewController {
     
     let tableView = UITableView()
     
+    var observer: NSObjectProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .systemBackground
         title = "Second"
         
+        //Adding observer
+        observer = NotificationCenter.default.addObserver(forName: Notification.Name("addEmoji"), object: nil, queue: .main, using: { [self]
+            notification in
+            
+            guard let object = notification.object as? [String: Emoji] else {return}
+            guard let emoji = object["emoji"] else {return}
+            self.favoriteEmoji.append(emoji)
+            tableView.reloadData()
+        })
+        
+ 
         view.addSubview(tableView)
-
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .yellow
         tableView.delegate = self
@@ -41,9 +55,9 @@ class SecondViewController: UIViewController {
             tableView.heightAnchor.constraint(equalToConstant: 400),
             //tableView.widthAnchor.constraint(equalToConstant: 150)
         ])
-        
-        let rootVC = EditEmojiViewController()
-        rootVC.addToFavDelegate = self
+    }
+    
+    @objc private func updateEmojiList() {
         
     }
 }
@@ -64,9 +78,3 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
     
 }
 
-extension SecondViewController: AddToFavDelegate {
-    func addToFav(emoji: Emoji) {
-        favoriteEmoji.append(emoji)
-        tableView.reloadData()
-    }
-}

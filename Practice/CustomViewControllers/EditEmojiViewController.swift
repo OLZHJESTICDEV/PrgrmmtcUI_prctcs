@@ -7,17 +7,11 @@
 
 import UIKit
 
-protocol AddToFavDelegate: AnyObject {
-    func addToFav(emoji: Emoji)
-}
-
 class EditEmojiViewController: UIViewController {
     var emojiLabelTF = UITextField()
     var emojiTitleTF = UITextField()
     var emojiDescriptionTF = UITextField()
     var emojiIsFavorite = UIButton()
-
-    weak var addToFavDelegate: AddToFavDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +21,9 @@ class EditEmojiViewController: UIViewController {
     }
     
     @objc private func addToFavorite(){
-        addToFavDelegate?.addToFav(emoji: Emoji(
-            emoji: "gdfa",
-            name: "gdfa",
-            description: "gdfa",
-            isFavorite: true))
-        
-        dismiss(animated: true)
+        NotificationCenter.default.post(name: Notification.Name("addEmoji"), object: ["emoji": Emoji(emoji: self.emojiLabelTF.text!, name: self.emojiTitleTF.text!, description: self.emojiDescriptionTF.text!, isFavorite: true)])
     }
+    
     
     private func configure(){
         view.backgroundColor = .systemBackground
